@@ -44,3 +44,42 @@ Additional packages used:
 * keras 2.3.1
 * matplotlib 3.2.0    (optional)
 
+# How to run in command line
+
+* Make the folder dataset in the same directory of the .py file. Inside the dataset folder are **optdigits.tes**, **optdigits.tra**.
+
+* Navigate Mac terminal (or Window prompt) to the directory containig the .py file and enter:
+```
+$ python file_name.py
+```
+
+# How to change the hyper-parameters
+
+## In MLPs.py file
+
+| hyper paramter    |      Line     |  Notice |
+|:-------------------|:-------------:|------:|
+| loss function     |     38/41     | sum-of-squares error function: loss = *mean_squared_error*, cross-entropy error function: loss= *categorical_crossentropy* (and line 46 in MLPs_result.py) |
+| activation hidden unit | 38       | tanh: activation = *tanh*,  ReLU: activation= *relu* (and line 54 in MLPs_result.py) |
+| number of epochs  |    68   |    
+| batch size        |   69     |   
+| number of hidden layers |  70|
+| learning rates     | 72|
+| momentum rates    | 73 |
+| whether or not scaling input |  23-24 |
+
+
+## In CNNs.py file
+
+| hyper paramter    |      Line     |
+|-------------------|:-------------:|
+| number of epochs  |    80   |    
+| batch size        |   80    |   
+| number of hidden layers |  49-57 |
+| whether or not scaling input |  30-31 |
+| filter size | 47 |
+| kernel size | 47 |
+| pooling size | 50 |
+| strides | 50 |
+| dropout rate | 52 |
+| number of hidden units in Dense layer | 56-57 |
