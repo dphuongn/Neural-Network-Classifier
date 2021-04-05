@@ -3,8 +3,6 @@
 
 
 ## Data Set
-The 20 Newsgroups data set is a collection of approximately 20,000 newsgroup documents, partitioned (nearly) evenly across 20 different newsgroups. It was originally collected by Ken Lang, probably for his Newsweeder: Learning to filter netnews [1] paper, though he did not explicitly mention this collection. The 20 newsgroups collection has become a popular data set for
-experiments in text applications of machine learning techniques, such as text classification and text clustering.
 
 We will use the following data set from the UC Irvine Machine Learning Repository:
 
@@ -13,11 +11,11 @@ We will use the following data set from the UC Irvine Machine Learning Repositor
 
 ## What we do
 
-We will experiment with the Neural Network classifier. You will use the softmax function for the output layer and use 1-of-c output encoding with target values such as (1, 0, 0, ...). Use the early stopping technique to decide when to stop training (For example, you may use 20% of training data in **optdigits.tra** as the validation set).
+We will experiment with the Neural Network classifier. We will use the softmax function for the output layer and use **1-of-c** output encoding with target values such as (1, 0, 0, ...). Use the early stopping technique to decide when to stop training (For example, you may use 20% of training data in **optdigits.tra** as the validation set).
 
-### Experiment with fully-connected feed-forward neural networks
+### Experiment with fully-connected feed-forward neural networks (MLPs)
 
-We will implement the *multinomial model* (*"bag of words"* model). In the learning phase, you will estimate the required probability terms using the training data.
+We will implement the *multinomial model* (*"bag of words"* model). In the learning phase, we will estimate the required probability terms using the training data.
 
 #### **Sum-of-squares error (aka mean-squared-error) vs. cross-entropy error function**:
 Use the ReLU units for the hidden layers. For each of the two types of error functions, experiment with different values of hyper-parameters, including number of hidden layers, number of hidden units in each layer, learning rates, momentum rates, input scaling, and so on. Compare their classification accuracy and convergence speed (the number of iterations or actual time till training stops).
@@ -25,6 +23,9 @@ Use the ReLU units for the hidden layers. For each of the two types of error fun
 
 #### **tanh vs. ReLU hidden units**:
 Use the cross-entropy error function. For each of the two types of error functions, experiment with different values of hyper-parameters.
+
+### Experiment with convolutional networks (CNNs)
+Use the cross-entropy error function, and ReLU hidden units. Repeat previous experiments, that is, experiment with different values of hyper-parameters (note CNNs may have different types of hyper-parameters, e.g. filter size).
 
 
 <!-- ___ -->
