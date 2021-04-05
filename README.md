@@ -50,9 +50,9 @@ Additional packages used:
 * Make the folder dataset in the same directory of the .py file. Inside the dataset folder are **optdigits.tes**, **optdigits.tra**.
 
 * Navigate Mac terminal (or Window prompt) to the directory containing the .py file and enter:
-```
-$ python file_name.py
-```
+    ```
+    $ python file_name.py
+    ```
 
 # How to change the hyper-parameters
 
